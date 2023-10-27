@@ -11,4 +11,4 @@ It has took a lot of times to update & fix the code, hope you can [give me a sub
 ![in-game1](https://raw.githubusercontent.com/iBLiSSIN/Battledudes.io_CSS/main/Screenshot%20(2203).png)
 ![in-game2](https://raw.githubusercontent.com/iBLiSSIN/Battledudes.io_CSS/main/Screenshot%20(2205).png)
 
-## Instruction: [Coming soon!]()
+## Instruction: [Watch it on YouTube](https://www.youtube.com/watch?v=hIvjVAAiAsQ)
