@@ -1,0 +1,320 @@
+/*
+Version: 2.1.1
+Authors: Junako Doune & ZecroZhang
+Don't delete this if you want to change my code pls cuz this's free :)
+*/
+#blue_team_score_bar.bar_container.team_score_bar .background_bar .front_bar, #blue_team_score_bar.bar_container.team_score_bar_half .background_bar .front_bar {
+  background-color: rgba(0, 255, 255, 1) !important;
+}
+#red_team_score_bar.bar_container.team_score_bar .background_bar .front_bar, #red_team_score_bar.bar_container.team_score_bar_half .background_bar .front_bar {
+  background-color: rgba(255, 110, 255, 1) !important;
+}
+.team_score_container .own_player_name{
+  color: rgba(0, 255, 255, 1) !important;
+}
+.team_score_container .enemy_player_name{
+  color: rgba(255, 110, 255, 1) !important;
+}
+/*
+.game_ui #capture_points_container{
+  display: none;
+}
+*/
+#app .container .game {
+    cursor: url(data:image/png;base64,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) 20 20, crosshair !important;
+}
+/*loadout bg fix*/
+.slot .rarity_1 {
+    background-color: rgba(0, 255, 255, 0.3) !important;
+}
+.center_container .item_animation .cosmetics_button, .center_container .item_animation .cosmetics_button .rarity_4, .scrollable_content .item_selected {
+    background-color: rgba(0, 255, 255, 0.3) !important;
+    box-shadow:  0 0 0 0.2vw #00ffff !important;
+    transition: 0.3s !important;
+    filter: none !important;
+}
+/*weap select*/
+.loadout_saved_button .selected_inner {
+    background-image: linear-gradient( to left, rgba(0, 255, 255, 0.4), rgba(0, 255, 255, 0) )
+}
+/*bỏ khả năng ấn chuột để chọn vũ khí*/
+#app .container .game_ui .party_players_container, #app .container .game_ui .team_score_container, #app .container .game_ui .capture_point_time_left {
+    pointer-events: none !important;
+    opacity: 1 !important;
+    box-shadow: 0 0 3vw 0.1vw rgba(0, 255, 255, 0.5) !important;
+}
+#app .container .game_ui #weapons_inventory_container .loadout_weapon {
+    pointer-events: none !important;
+    opacity: 1 !important;
+}
+.game_ui #weapons_inventory_container {
+    bottom: 7.43% !important;
+    right: 38.2% !important;
+    background-color: rgba(255, 255, 255, 0.3) !important
+}
+.global_no_select .selected {
+    position: relative !important;
+    display: flex !important;
+    box-shadow: 0 0 0 0.2vw rgba(0, 255, 255, 0.8), inset 0 0 0.2vw 0.2vw rgba(0, 0, 0, 0.3) !important;
+    transform: translateY(0%) !important;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 0 !important;
+    margin: 0px !important;
+}
+#app .container .game_ui #weapons_inventory_container .loadout_weapon {
+    pointer-events: none !important;
+    display: none;
+} 
+/*vote chế độ*/
+.subscreen .voting_item_selected {
+    background-color: #00ffff !important;
+    box-shadow: 0 -1.5px 10px 5px #00ffff !important;
+    transition: 0.3s !important;
+}
+.voting_item {
+    transition: 0.3s !important;
+}
+.voting_item:hover {
+    box-shadow: 0 -1.5px 10px 5px #00ffff !important;
+}
+/*hover viền*/
+.row .time_range_button:hover {
+    transition: 0.3s !important;
+}
+.row .time_range_button:hover {
+    box-shadow: 0 -1.5px 10px 5px #00ffff !important;
+}
+/*nút màu xanh*/
+.button_animation .blue, .exit_game_button .red, .claim_button .green, .log_in_button .blue, .margin .blue, .menu_button_top .red, .row .blue ,.buy_button .button, .copy_button .button, .input_margin .red, .input_margin .blue, .party_search_submit .blue, .control_buttons .red, #respawn_button .blue, .graphics_quality_button .blue, .key_bindings_button .blue, .menu_pages_container .play_menu_container .center_play .input_margin .blue, .shop_button .blue, .exit_menu_button .red, .log_out_button .red {
+    background-color: #00ffff !important;
+    box-shadow: 0 -1.5px 10px 5px #00ffff !important;
+    transition: 0.3s !important;
+    height: 1000 !important;
+}
+.buy_button {
+    filter: none !important;
+}
+/*hover các nút chỉnh keybinds*/
+.key_bindings_button .blue:hover {
+    background-color: #00dcdc !important;
+    box-shadow: 0 -1.5px 10px 5px #00dcdc !important;
+    scale: 1.05 !important;
+}
+/*hover nút xanh*/
+.copy_button .button:hover, .button_animation .blue:hover, .exit_game_button .red:hover, .claim_button .green:hover, .log_in_button .blue:hover, .margin .blue:hover, .menu_button_top .red:hover, .buy_button .button:hover, .input_margin .red:hover, .input_margin .blue:hover, .party_search_submit .blue:hover, .control_buttons .red:hover, #respawn_button .blue:hover, .graphics_quality_button .blue:hover, .menu_pages_container .play_menu_container .center_play .input_margin .blue:hover, .shop_button .blue:hover, .exit_menu_button .red:hover, .log_out_button .red:hover {
+    background-color: #00dcdc !important;
+    box-shadow: 0 -1.5px 10px 5px #00dcdc !important;
+    scale: 1.15 !important;
+}
+/*nút phụ*/
+.button.ui_rounded.orange, .control_buttons .brown, .graphics_quality_button .grey, .input_margin .purple, .shop_button .purple, .shop_button .yellow, .shop_button .green, .shop_button .orange, .shop_button .brown, .input_margin .grey {
+    background-color: #76eeab !important;
+    box-shadow: 0px 0.15em 0px 0px #76eeab !important;
+    transition: 0.3s !important;
+}
+/*hover cho nút phụ*/
+.button.ui_rounded.orange:hover, .control_buttons .brown:hover, .graphics_quality_button .grey:hover, .input_margin .purple:hover, .shop_button .purple:hover, .shop_button .yellow:hover, .shop_button .green:hover, .shop_button .orange:hover, .shop_button .brown:hover, .input_margin .grey:hover {
+    background-color: #50d78c !important;
+    box-shadow: 0 -1.5px 10px 5px #50d78c !important;
+    scale: 1.15 !important;
+}
+/*chữ đen cho một số nút*/
+.button.ui_rounded.orange, .button_animation .blue, .input_margin .red, .input_margin .blue, .copy_button .button, .subscreen .voting_item_selected, .subscreen .voting_item_selected .voting_item_votecount, .exit_game_button .red, .claim_button .green, .log_in_button .blue, .margin .blue, .menu_button_top .red, .row .blue, .row .time_range_button, .party_search_submit .button, .claim_button .grey, .control_buttons .red, .control_buttons .brown, #respawn_button .button, .exit_menu_button .button, .graphics_quality_button .button,  .key_bindings_button .blue, .input_margin .button, .input_margin .button, .buy_button .button, .shop_button .button, .input_margin .grey, .menu_pages_container .play_menu_container .center_play .input_margin .button, .shop_button .button, .log_out_button .button {
+    color: #000 !important;
+}
+.menu_buttons_container {
+    opacity: 0 !important;
+    transition: 0.3s !important;
+}
+.menu_buttons_container:hover {
+    opacity: 1 !important;
+}
+#app {
+    font-family: 'Brush Script', cursive !important;
+}
+/*Bỏ mấy cái k cần thiết*/
+.weapon_ammo_container_battledudes #ammo_indicator_image, .google_play_badge_link, .bottom_reward_other_game_container .other_game_link_container, .gameindex_anchor, .gift_right, .gift_long, .play_menu_container .bottom_links, * #ad_position_box #card, .center_play .social_container, .play_menu_container .reward_container {
+    display: none !important;
+}
+.menu_button {
+    background-color: rgba(48, 48, 48, 0.3) !important;
+    border: solid 0.1vw rgba(0, 0, 0, 0.3) !important;
+    transition: 0.3s !important;
+}
+.menu_button:hover {
+    background-color: rgba(48, 48, 48, 0.3) !important;
+    border: solid 0.1vw rgba(0, 0, 0, 0.3) !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 -1px 10px 5px #00ffff !important;
+}
+.menu_button_active {
+    transform: scale(1.15) !important;
+    background-image: linear-gradient(to left, #00FFFF, #00FFFF) !important;
+    box-shadow: 0 -1px 10px 5px #00ffff !important;
+    border: 0px solid transparent !important;
+    color: #000 !important;
+}
+.menu_button_active .menu_button_image {
+    filter: brightness(0) !important;
+}
+/*chỉnh lại pass + màu thanh exp*/
+.menu_buttons_container .menu_button_battlepass {
+    background-color: rgba(0, 255, 255, 0.3) !important;
+}
+.level_progress .background_bar .front_bar, .bar_container, .bar_container.xp_bar .background_bar .front_bar {
+    background-color: #E0FFFF !important;
+    filter: none !important;
+    box-shadow: none !important;
+/*    box-shadow: 0 -1.5px 10px 5px #00dcdc !important;*/
+    overflow: visible !important;
+}
+@keyframes glow-data-v-ed6a9af0 {
+0% {box-shadow: 0 0 0.5vw -0.5vw #00ffff;}
+20%, 80% {box-shadow: 0 0 0.5vw 0.2vw #00ffff;}
+100% {box-shadow: 0 0 0.5vw -0.5vw #00ffff;}
+}
+.item_container .item_unlocked {
+    border: solid #00ffff 0.2vw !important;
+}
+.buy_button {
+    filter: none !important;
+}
+/*Hover vài cái linh tinh*/
+.selected_slot {
+    padding: 0vh !important;
+    box-shadow: 0 -1.5px 10px 5px #00ffff !important; 
+}
+.item, .options_row {
+    overflow: visible !important;
+}
+.ui_rounded {
+    overflow: visible;
+}
+.logo_image {
+    display: none !important;
+}
+.version_text {
+    display: block !important;
+    top: 650px !important;
+    left: 480px !important;
+    color: #00ffff !important;
+    transition: 0.3s !important;
+    transform: rotate(0deg) !important;
+    opacity: 0 !important;
+}
+.version_text:hover {
+    color: #00ffff !important;
+    text-shadow: 0 0 10px #00ffff !important;
+    opacity: 1 !important;
+}
+.vue-notification-group {
+    display: block !important;
+}
+/*user color*/
+.user_display_component {
+    background-image: linear-gradient(0deg, rgba(0,255,255, 0.5), rgba(0,255,255, 1)) !important;
+    color: #000 !important;
+}
+/*Hover loadout*/
+.loadout_saved_button {
+    transition: 0.3s !important;
+}
+.loadout_saved_button:hover {
+    font-size: 2.15vh !important;
+    padding: 0vh !important;
+    opacity: 1 !important; 
+}
+/*misson*/
+.item_list .list_wrapper {
+   background-color: rgba(0 ,0 ,0 ,0) !important;
+}
+.item_list .list_wrapper .static_content {
+   background-color: rgba(0 ,255 ,255 , 0.5) !important;
+}
+/*loadout main*/
+.item_big_display {
+background-color: rgba(0 ,255 ,255 , 0.3) !important;
+}
+#loadout_container, .scrollable_content, #loadout_container .menu_element_background, .cosmetics_container, .cosmetics_container .row .button_and_label_container, .item_list {
+   background-color: rgba(0 ,0 ,0 ,0) !important;
+   box-shadow: 0 0 3vw 0.1vw rgba(0, 0, 0, 0.5) !important;
+    transition: 0.3s !important;
+}
+#loadout_container .menu_element_background:hover,  .cosmetics_container .row .button_and_label_container:hover {
+   transform: scale(1.1) !important;
+}
+/*pass main*/
+.menu_element_background {
+   background-color: rgba(0 ,0 ,0 ,0) !important;
+   box-shadow: 0 0 3vw 0.1vw rgba(0, 0, 0, 0.5) !important;
+    transition: 0.3s !important;
+}
+.title {
+    filter: drop-shadow(0vw 0vw 0.3vw rgba(0, 255, 255, 1)) !important;
+}
+/*main menu*/
+select {
+   background-color: rgba(0 ,255 ,255 ,0.5) !important;
+   color: #000 !important;
+}
+.name_box {
+   background-color: rgba(0 ,255 ,255 ,0.5) !important;
+   color: #000 !important;
+}
+/*1160*/
+.center_play {
+    left_: 1160px !important;
+    top_: 500px !important;
+    opacity: 0 !important;
+    transition: 0.3s !important;
+}
+.center_play:hover {
+    left_: 1160px !important;
+    top_: 500px !important;
+    opacity: 1 !important;
+}
+.options_select_container {
+    left_: 1115px !important;
+    top_: 200px;
+    opacity: 0 !important;
+    transition: 0.3s !important;
+}
+.options_select_container:hover {
+    left_: 1115px !important;
+    top_: 200px !important;
+    opacity: 1 !important;
+}
+/*Hiển thị số đạn*/
+.game_ui .weapon_ammo_container {
+    left: 47% !important;
+    width: 18vw !important;;
+    background-color: rgba(0, 255, 255, 0.3) !important;
+}
+.game_ui .weapon_ammo_container #weapon_ammo {
+      left: 78% !important;
+}
+.game_ui .weapon_ammo_container {
+      box-shadow: none  !important;
+}
+.game_ui .weapon_ammo_container:before {
+    content: " Ammunition:"!important;
+}
+.container .player_count_container {
+    background-color: rgba(0, 255, 255, 0.3) !important;
+    box-shadow: 0 0 3vw 0.1vw rgba(0, 255, 255, 0.5) !important;
+}
+/*Chỉnh lại thanh hp*/
+.health_bar_container .health_bar {
+    background-color: #00ffff !important;
+}
+.health_bar_container {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: none  !important;
+}
+.background_image {
+    background-image: url(https://cdn.discordapp.com/attachments/998088106404221041/1140470047769383014/0.vip.jpg) !important;
+}
+/*
+.background_image {
+    background-image: url(https://github.com/iBLiSSIN/iblissin.github.io/releases/download/1.1/hoshino_gif.gif) !important;
+}
