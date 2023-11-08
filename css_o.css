@@ -1,5 +1,5 @@
 /*
-Version: 2.1.1
+Version: 2.1.2
 Authors: Junako Doune & ZecroZhang
 Don't delete this if you want to change my code pls cuz this's free :)
 */
@@ -123,7 +123,7 @@ Don't delete this if you want to change my code pls cuz this's free :)
     color: #000 !important;
 }
 .menu_buttons_container {
-    opacity: 0 !important;
+    opacity: 1 !important;
     transition: 0.3s !important;
 }
 .menu_buttons_container:hover {
@@ -200,7 +200,7 @@ Don't delete this if you want to change my code pls cuz this's free :)
     color: #00ffff !important;
     transition: 0.3s !important;
     transform: rotate(0deg) !important;
-    opacity: 0 !important;
+    opacity: 1 !important;
 }
 .version_text:hover {
     color: #00ffff !important;
@@ -265,7 +265,7 @@ select {
 .center_play {
     left_: 1160px !important;
     top_: 500px !important;
-    opacity: 0 !important;
+    opacity: 1 !important;
     transition: 0.3s !important;
 }
 .center_play:hover {
@@ -276,7 +276,7 @@ select {
 .options_select_container {
     left_: 1115px !important;
     top_: 200px;
-    opacity: 0 !important;
+    opacity: 1 !important;
     transition: 0.3s !important;
 }
 .options_select_container:hover {
@@ -300,6 +300,10 @@ select {
     content: " Ammunition:"!important;
 }
 .container .player_count_container {
+    background-color: rgba(0, 255, 255, 0.3) !important;
+    box-shadow: 0 0 3vw 0.1vw rgba(0, 255, 255, 0.5) !important;
+}
+.container #capture_points_container {
     background-color: rgba(0, 255, 255, 0.3) !important;
     box-shadow: 0 0 3vw 0.1vw rgba(0, 255, 255, 0.5) !important;
 }
