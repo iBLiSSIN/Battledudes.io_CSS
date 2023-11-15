@@ -1,5 +1,5 @@
 /*
-Version: 2.1.2
+Version: 2.1.3
 Authors: Junako Doune & ZecroZhang
 Don't delete this if you want to change my code pls cuz this's free :)
 */
@@ -160,6 +160,9 @@ Don't delete this if you want to change my code pls cuz this's free :)
 /*chỉnh lại pass + màu thanh exp*/
 .menu_buttons_container .menu_button_battlepass {
     background-color: rgba(0, 255, 255, 0.3) !important;
+}
+.display_container .center_container {
+    filter: drop-shadow(0vw 0vw 3vw rgba(0, 255, 255, 0.8)) !important;
 }
 .level_progress .background_bar .front_bar, .bar_container, .bar_container.xp_bar .background_bar .front_bar {
     background-color: #E0FFFF !important;
