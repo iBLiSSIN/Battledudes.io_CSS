@@ -1,5 +1,5 @@
 /*
-Version: 2.1.3
+Version: 2.1.4
 Authors: Junako Doune & ZecroZhang
 Don't delete this if you want to change my code pls cuz this's free :)
 */
@@ -136,7 +136,7 @@ Don't delete this if you want to change my code pls cuz this's free :)
 .weapon_ammo_container_battledudes #ammo_indicator_image, .google_play_badge_link, .bottom_reward_other_game_container .other_game_link_container, .gameindex_anchor, .gift_right, .gift_long, .play_menu_container .bottom_links, * #ad_position_box #card, .center_play .social_container, .play_menu_container .reward_container {
     display: none !important;
 }
-.menu_button {
+.menu_button, .menu_buttons_container .menu_button_special_event {
     background-color: rgba(48, 48, 48, 0.3) !important;
     border: solid 0.1vw rgba(0, 0, 0, 0.3) !important;
     transition: 0.3s !important;
@@ -320,6 +320,49 @@ select {
 }
 .background_image {
     background-image: url(https://cdn.discordapp.com/attachments/998088106404221041/1140470047769383014/0.vip.jpg) !important;
+}
+/*
+v2.1.4 Changelog
+1. Stats UserName & Background Color Changed
+2. Changed Shop & Event Items Color
+*/
+.stats_container .stats {
+    background-color: rgba(0, 255, 255, 0.1) !important;
+}
+.user_name {
+    color: rgb(0, 255, 255) !important;
+    text-shadow: 0 0 10px #00ffff !important;
+}
+.item {
+    background-color: rgba(0, 255, 255, 0.1) !important;
+    transition: 0.3s !important;
+}
+.item:hover {
+    background-color: rgba(0, 255, 255, 0.3) !important;
+}
+.item_stats_button {
+    background-color: rgba(0, 255, 255, 0.3) !important;
+    transition: 0.3s !important;
+}
+.item_stats_button:hover {
+    background-color: rgba(0, 139, 139, 1) !important;
+    text-shadow: 0 0 10px #ffffff !important;
+    transform: scale(1.2) !important;
+}
+.selected_sort {
+    color: rgb(0, 255, 255) !important;
+    text-shadow: 0 0 10px #00ffff !important;
+    transition: 0.3s !important;
+}
+.item_stat {
+    transition: 0.3s !important;
+}
+.item_stat:hover {
+    color: rgb(0, 255, 255) !important;
+    text-shadow: 0 0 10px #00ffff !important;
+}
+.item_unlocked {
+    border: solid #00ffff 0.25vw !important;
 }
 /*
 .background_image {
