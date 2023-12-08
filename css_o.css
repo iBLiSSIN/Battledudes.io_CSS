@@ -176,9 +176,6 @@ Don't delete this if you want to change my code pls cuz this's free :)
 20%, 80% {box-shadow: 0 0 0.5vw 0.2vw #00ffff;}
 100% {box-shadow: 0 0 0.5vw -0.5vw #00ffff;}
 }
-.item_container .item_unlocked {
-    border: solid #00ffff 0.2vw !important;
-}
 .buy_button {
     filter: none !important;
 }
@@ -361,7 +358,7 @@ v2.1.4 Changelog
     color: rgb(0, 255, 255) !important;
     text-shadow: 0 0 10px #00ffff !important;
 }
-.item_unlocked {
+#app .item_unlocked {
     border: solid #00ffff 0.25vw !important;
 }
 /*
