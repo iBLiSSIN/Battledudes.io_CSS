@@ -1,5 +1,5 @@
 /*
-Version: 2.1.4
+Version: 2.1.5
 Authors: Junako Doune & ZecroZhang
 Don't delete this if you want to change my code pls cuz this's free :)
 */
@@ -322,6 +322,8 @@ select {
 v2.1.4 Changelog
 1. Stats UserName & Background Color Changed
 2. Changed Shop & Event Items Color
+v2.1.5 Changelog
+Removed unwanted background color on kill notice (I didn't know why this appeared lmfao)
 */
 .stats_container .stats {
     background-color: rgba(0, 255, 255, 0.1) !important;
@@ -331,8 +333,10 @@ v2.1.4 Changelog
     text-shadow: 0 0 10px #00ffff !important;
 }
 .item {
-    background-color: rgba(0, 255, 255, 0.1) !important;
     transition: 0.3s !important;
+}
+.item .item_stats_container {
+    background-color: rgba(0, 255, 255, 0.1) !important;
 }
 .item:hover {
     background-color: rgba(0, 255, 255, 0.3) !important;
@@ -360,6 +364,9 @@ v2.1.4 Changelog
 }
 #app .item_unlocked {
     border: solid #00ffff 0.25vw !important;
+}
+#app .container #game_ui_container.global_no_select.game_ui .xp_hype_text {
+    color: #ffffff !important;
 }
 /*
 .background_image {
