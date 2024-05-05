@@ -212,7 +212,7 @@ Don't delete this if you want to change my code pls cuz this's free :)
 }
 /*user color*/
 .user_display_component {
-    background-image: linear-gradient(0deg, rgba(0,255,255, 0.5), rgba(0,255,255, 1)) !important;
+    background-image: linear-gradient(0deg, rgba(0,255,255, 1), rgba(0,255,255, 0.5)) !important;
     color: #000 !important;
 }
 /*Hover loadout*/
